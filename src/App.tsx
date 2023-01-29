@@ -3,6 +3,7 @@ import HangmanDrawing from './HangmanDrawing'
 import HangmanWord from './HangmanWord '
 import { Keyboard } from './Keyboard'
 import words from './wordList.json'
+import './styles/App.css'
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
@@ -64,19 +65,10 @@ function App() {
   }, [])
 
   return (
-    <div
-      style={{
-        maxWidth: '800px',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '2rem',
-        margin: '0 auto',
-        alignItems: 'center',
-      }}
-    >
-      <div style={{ fontSize: '2rem', textAlign: 'center' }}>
-        {isWinner && 'Winner! - Refresh to try again'}
-        {isLoser && 'Nice Try - Refresh to try again'}
+    <div className="main-container">
+      <div className="main-heading">
+        {isWinner && 'Winner! - Refresh / Press Enter to try again'}
+        {isLoser && 'Nice Try - Refresh / Press Enter to try again'}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
@@ -84,7 +76,7 @@ function App() {
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
       />
-      <div style={{ alignSelf: 'stretch' }}>
+      <div className="keyboard-container">
         <Keyboard
           disabled={isWinner || isLoser}
           activeLetters={guessedLetters.filter((letter) =>

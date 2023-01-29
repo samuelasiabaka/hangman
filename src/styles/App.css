@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.keyboard-container {
+  align-self: stretch;
+}

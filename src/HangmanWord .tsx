@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/HangmanWord.css'
 
 type HangmanWordProps = {
   guessedLetters: string[]
@@ -12,16 +13,7 @@ const HangmanWord = ({
   reveal = false,
 }: HangmanWordProps) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        gap: '.25rem',
-        fontSize: '6rem',
-        fontWeight: 'bold',
-        textTransform: 'uppercase',
-        fontFamily: 'monospace',
-      }}
-    >
+    <div className="word-container">
       {wordToGuess.split('').map((letter, index) => (
         <span
           style={{

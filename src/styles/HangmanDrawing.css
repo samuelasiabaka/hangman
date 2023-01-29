@@ -1,0 +1,87 @@
+.hangman-container {
+  position: relative;
+}
+.hangman-head {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+}
+.hangman-body {
+  height: 100px;
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+.hangman-right-arm {
+  height: 10px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  rotate: -30deg;
+  transform-origin: left bottom;
+}
+.hangman-left-arm {
+  height: 10px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  rotate: 30deg;
+  transform-origin: right bottom;
+}
+.hangman-right-leg {
+  height: 10px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 210px;
+  right: -90px;
+  rotate: 60deg;
+  transform-origin: left bottom;
+}
+.hangman-left-leg {
+  height: 10px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 210px;
+  right: 0;
+  rotate: -60deg;
+  transform-origin: right bottom;
+}
+
+/* Hang Icon */
+.hang-icon-one {
+  height: 10px;
+  width: 250px;
+  background: black;
+}
+.hang-icon-two {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+.hang-icon-three {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+}
+.hang-icon-four {
+  height: 50px;
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
