@@ -5,7 +5,7 @@
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  border: 10px solid black;
+  border: 10px solid green;
   position: absolute;
   top: 50px;
   right: -30px;
@@ -13,7 +13,7 @@
 .hangman-body {
   height: 100px;
   width: 10px;
-  background-color: black;
+  background-color: green;
   position: absolute;
   top: 120px;
   right: 0;
@@ -21,7 +21,7 @@
 .hangman-right-arm {
   height: 10px;
   width: 100px;
-  background: black;
+  background: yellow;
   position: absolute;
   top: 150px;
   right: -100px;
@@ -31,7 +31,7 @@
 .hangman-left-arm {
   height: 10px;
   width: 100px;
-  background: black;
+  background: yellow;
   position: absolute;
   top: 150px;
   right: 10px;
@@ -41,7 +41,7 @@
 .hangman-right-leg {
   height: 10px;
   width: 100px;
-  background: black;
+  background: red;
   position: absolute;
   top: 210px;
   right: -90px;
@@ -51,7 +51,7 @@
 .hangman-left-leg {
   height: 10px;
   width: 100px;
-  background: black;
+  background: red;
   position: absolute;
   top: 210px;
   right: 0;
